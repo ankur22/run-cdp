@@ -90,3 +90,15 @@ Now the group:
 ```
 
 To return back to running groups as synchronous, enter `sync` and press enter.
+
+## Running Chrome in debug mode
+
+```bash
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess \
+--disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection \
+--disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions \
+--disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding \
+--allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding \
+--force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf \
+--disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-startup-window --user-data-dir=/var/folders/7s/686mfghs7vndw75bv87qwrmh0000gn/T/ --remote-debugging-port=1234 --remote-debugging-address=0.0.0.0
+```
